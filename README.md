@@ -29,5 +29,20 @@ To remove this startup msg, edit q.q
 - ON_STARTUP : 실행시 구동할 파일
 - PORT : 포트
 
+## Monitoring
+
+### Prometheus Exporter
+You can apply [KxSystems/Prometheus Exporter for kdb+](https://github.com/KxSystems/prometheus-kdb-exporter) for prometheus metrics.
+
+```sh
+# Example
+system "cd ../prometheus-exporter"
+system "l exporter.q"
+system "cd ../q"
+```
+
+### Grafana Dashboard
+[prometheus-kdb-exporter/kdb-dashboard.json](https://github.com/KxSystems/prometheus-kdb-exporter/blob/master/examples/DockerCompose/grafana-config/dashboards/kdb-dashboard.json)
+
 ## Contributors
 - Mambo
